@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo AgroTech Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>AgroTech Solutions</h1>
+            <nav>
+                <ul>
+                    <li><a href="#comparacion-precios">Comparar Precios</a></li>
+                    <li><a href="#optimizacion-recursos">Optimizar Recursos</a></li>
+                    <li><a href="#suscripcion">Suscripciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="comparacion-precios">
+        <div class="section-container">
+            <h2>Comparar Precios Agrícolas en Tiempo Real</h2>
+            <p>Seleccione el cultivo que desea comparar y observe los precios actualizados en tiempo real de diferentes mercados.</p>
+            <div class="comparacion-form">
+                <select id="select-cultivo">
+                    <option value="maiz">Maíz</option>
+                    <option value="trigo">Trigo</option>
+                    <option value="soja">Soja</option>
+                </select>
+                <button id="comparar">Comparar Precios</button>
+            </div>
+            <div id="resultados-precios" class="resultados"></div>
+        </div>
+    </section>
+
+    <section id="optimizacion-recursos">
+        <div class="section-container">
+            <h2>Simulación de Optimización de Recursos</h2>
+            <p>Seleccione los recursos que desea optimizar para recibir recomendaciones.</p>
+            <form id="optimizacion-form">
+                <label for="riego">Nivel de Riego:</label>
+                <input type="range" id="riego" name="riego" min="1" max="10">
+                <label for="fertilizacion">Nivel de Fertilización:</label>
+                <input type="range" id="fertilizacion" name="fertilizacion" min="1" max="10">
+                <button type="button" id="simular">Simular Optimización</button>
+            </form>
+            <div id="resultados-optimizacion" class="resultados"></div>
+        </div>
+    </section>
+
+    <section id="suscripcion">
+        <div class="section-container">
+            <h2>Opciones de Suscripción</h2>
+            <p>Obtenga acceso completo a todas las funciones y reciba beneficios exclusivos al suscribirse.</p>
+            <div class="planes-suscripcion">
+                <div class="plan">
+                    <h3>Básico</h3>
+                    <p>Acceso a la comparación de precios agrícolas.</p>
+                    <p>Precio: $5/mes</p>
+                    <button>Suscribirse</button>
+                </div>
+                <div class="plan">
+                    <h3>Avanzado</h3>
+                    <p>Acceso completo a todas las funciones, incluyendo optimización de recursos.</p>
+                    <p>Precio: $10/mes</p>
+                    <button>Suscribirse</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AgroTech Solutions. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
